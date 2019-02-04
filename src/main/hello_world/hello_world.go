@@ -1,6 +1,8 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func main() {
 	var message1 string
@@ -12,4 +14,11 @@ func main() {
 	int1, int2, int3 = 1, 2, 3
 	fmt.Println(message2)
 	fmt.Println(int1, int2, int3, int4, int5, int6)
+
+	//	pointers
+
+	pointerMessage := "this is a pointer message"
+	var pointerMessagePointer1 *string = &pointerMessage
+	pointerMessagePointer2 := &pointerMessage
+	fmt.Println(pointerMessage, pointerMessagePointer1, pointerMessagePointer2, *pointerMessagePointer1)
 }
