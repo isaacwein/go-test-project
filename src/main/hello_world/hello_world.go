@@ -9,6 +9,27 @@ type Person struct {
 	phoneNumber string
 }
 
+func addLineBreaks1(name, address, phoneNumber string) string {
+	return name + "\n" + address + "\n" + phoneNumber
+}
+func addLineBreaks2(name, address, phoneNumber string) (string, string) {
+	return "string1\n" + name + "\n" + address + "\n" + phoneNumber,
+		"string2\n" + name + "\n" + address + "\n" + phoneNumber
+}
+func addLineBreaks3(name, address, phoneNumber string) (string1 string, string2 string) {
+	string1 = "string1\n" + name + "\n" + address + "\n" + phoneNumber
+	string2 = "string2\n" + name + "\n" + address + "\n" + phoneNumber
+	return
+}
+func PrintPerson(person Person) {
+	fmt.Println("PrintPerson from func PrintPerson with addLineBreaks")
+	fmt.Println(addLineBreaks1(person.name, person.address, person.phoneNumber))
+
+	addLineBreaks2Value1, addLineBreaks2Value2 := addLineBreaks2(person.name, person.address, person.phoneNumber)
+	_, addLineBreaks2Value3 := addLineBreaks2(person.name, person.address, person.phoneNumber)
+	addLineBreaks2Value4, _ := addLineBreaks2(person.name, person.address, person.phoneNumber)
+	fmt.Println("addLineBreaks2", addLineBreaks2Value1, addLineBreaks2Value2, addLineBreaks2Value3, addLineBreaks2Value4)
+}
 func main() {
 	var message1 string
 	var int1, int2, int3 int
@@ -48,5 +69,8 @@ func main() {
 	)
 
 	fmt.Println("const", PI, Lang, A, B, C)
+
+	//	functions
+	PrintPerson(p1)
 
 }
