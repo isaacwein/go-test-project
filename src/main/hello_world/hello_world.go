@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 type subString string
-type person struct {
+type Person struct {
 	name        string
 	address     string
 	phoneNumber string
@@ -33,7 +33,7 @@ func main() {
 	message3 = "message3"
 	fmt.Println("custom types", message3)
 
-	var p1 = person{"isaac", "28 South 9", "347-563-5668"}
-	p2 := person{phoneNumber: "212-444-9911", name: "josh"}
+	var p1 = Person{"isaac", "28 South 9", "347-563-5668"}
+	p2 := Person{phoneNumber: "212-444-9911", name: "josh"}
 	fmt.Println(p1, p2)
 }
