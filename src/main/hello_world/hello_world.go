@@ -1,8 +1,13 @@
 package main
 
-import (
-	"fmt"
-)
+import "fmt"
+
+type subString string
+type person struct {
+	name        string
+	address     string
+	phoneNumber string
+}
 
 func main() {
 	var message1 string
@@ -20,5 +25,15 @@ func main() {
 	pointerMessage := "this is a pointer message"
 	var pointerMessagePointer1 *string = &pointerMessage
 	pointerMessagePointer2 := &pointerMessage
-	fmt.Println(pointerMessage, pointerMessagePointer1, pointerMessagePointer2, *pointerMessagePointer1)
+	fmt.Println("pointers", pointerMessage, pointerMessagePointer1, pointerMessagePointer2, *pointerMessagePointer1)
+
+	//	custom types
+
+	var message3 subString
+	message3 = "message3"
+	fmt.Println("custom types", message3)
+
+	var p1 = person{"isaac", "28 South 9", "347-563-5668"}
+	p2 := person{phoneNumber: "212-444-9911", name: "josh"}
+	fmt.Println(p1, p2)
 }
