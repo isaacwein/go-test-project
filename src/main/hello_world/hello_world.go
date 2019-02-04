@@ -36,4 +36,17 @@ func main() {
 	var p1 = Person{"isaac", "28 South 9", "347-563-5668"}
 	p2 := Person{phoneNumber: "212-444-9911", name: "josh"}
 	fmt.Println(p1, p2)
+
+	//const varibles
+
+	const (
+		PI   = 3.14
+		Lang = "en"
+		A    = iota
+		B
+		C
+	)
+
+	fmt.Println("const", PI, Lang, A, B, C)
+
 }
