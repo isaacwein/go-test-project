@@ -1,35 +1,12 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"main/greeting"
+)
 
 type subString string
-type Person struct {
-	name        string
-	address     string
-	phoneNumber string
-}
 
-func addLineBreaks1(name, address, phoneNumber string) string {
-	return name + "\n" + address + "\n" + phoneNumber
-}
-func addLineBreaks2(name, address, phoneNumber string) (string, string) {
-	return "string1\n" + name + "\n" + address + "\n" + phoneNumber,
-		"string2\n" + name + "\n" + address + "\n" + phoneNumber
-}
-func addLineBreaks3(name, address, phoneNumber string) (string1 string, string2 string) {
-	string1 = "string1\n" + name + "\n" + address + "\n" + phoneNumber
-	string2 = "string2\n" + name + "\n" + address + "\n" + phoneNumber
-	return
-}
-func PrintPerson(person Person) {
-	fmt.Println("PrintPerson from func PrintPerson with addLineBreaks")
-	fmt.Println(addLineBreaks1(person.name, person.address, person.phoneNumber))
-
-	addLineBreaks2Value1, addLineBreaks2Value2 := addLineBreaks2(person.name, person.address, person.phoneNumber)
-	_, addLineBreaks2Value3 := addLineBreaks2(person.name, person.address, person.phoneNumber)
-	addLineBreaks2Value4, _ := addLineBreaks2(person.name, person.address, person.phoneNumber)
-	fmt.Println("addLineBreaks2", addLineBreaks2Value1, addLineBreaks2Value2, addLineBreaks2Value3, addLineBreaks2Value4)
-}
 func main() {
 	var message1 string
 	var int1, int2, int3 int
@@ -54,8 +31,8 @@ func main() {
 	message3 = "message3"
 	fmt.Println("custom types", message3)
 
-	var p1 = Person{"isaac", "28 South 9", "347-563-5668"}
-	p2 := Person{phoneNumber: "212-444-9911", name: "josh"}
+	var p1 = greeting.Person{"isaac", "28 South 9", "347-563-5668"}
+	p2 := greeting.Person{PhoneNumber: "212-444-9911", Name: "josh"}
 	fmt.Println(p1, p2)
 
 	//const varibles
@@ -71,6 +48,6 @@ func main() {
 	fmt.Println("const", PI, Lang, A, B, C)
 
 	//	functions
-	PrintPerson(p1)
-
+	greeting.PrintPerson(p1)
+	greeting.PrintPersons(p1, p2, p1, p2, p1, p2)
 }
