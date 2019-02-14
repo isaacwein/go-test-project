@@ -116,24 +116,33 @@ func FindSlice(num int) (Person, bool) {
 }
 
 type Renamable interface {
-	RenameName(newName string)
+	Combine() string
 }
+type Peoples []Renamable
 type People struct {
 	Name        string
 	Address     string
 	PhoneNumber string
 }
 
+type Car struct {
+	Owner   string
+	Address string
+}
+
 func (people People) Combine() string {
 	return people.Name + " - Address: " + people.Address + " - PhoneNumber: " + people.PhoneNumber
 }
-func (people *People) RenameName(r string) {
+func (people People) Combine1() string {
+	return people.Name + " - Address: " + people.Address + " - PhoneNumber: " + people.PhoneNumber
+}
+func (car Car) Combine() string {
+	return car.Owner + " - Address: " + car.Address
+}
+func (people *People) RenameAddress(r string) {
 	people.Name = r
 }
 
-type Peoples []People
-
-func RenameToFrog(r *People) {
-	r.RenameName("frog")
-	fmt.Println("pppp", r)
+func (car *Car) RenameAddress(r string) {
+	car.Owner = r
 }

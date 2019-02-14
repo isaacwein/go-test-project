@@ -3,6 +3,8 @@ package main
 import (
 	"fmt"
 	"main/greeting"
+	"os"
+	"time"
 )
 
 type subString string
@@ -137,16 +139,62 @@ func main() {
 	fmt.Println(slice4, len(slice4))
 
 	PeoplesList := greeting.Peoples{
-		{"Isaac0 Weingarten", "28 South 9", "718-599-0720"},
-		{"Isaac1 Weingarten", "29 South 9", "718-599-0721"},
-		{"Isaac2 Weingarten", "30 South 9", "718-599-0722"},
-		{"Isaac3 Weingarten", "31 South 9", "718-599-0723"},
+		greeting.People{"Isaac0 Weingarten", "28 South 9", "718-599-0720"},
+		greeting.People{"Isaac1 Weingarten", "29 South 9", "718-599-0721"},
+		greeting.People{"Isaac2 Weingarten", "30 South 9", "718-599-0722"},
+		greeting.People{"Isaac3 Weingarten", "31 South 9", "718-599-0723"},
+		greeting.Car{"car A", "452 Broadway"},
+		greeting.Car{"car B", "452 Broadway"},
+		greeting.Car{"car C", "452 Broadway"},
 	}
+
 	fmt.Println(PeoplesList[0].Combine(), "\n", PeoplesList[1].Combine(), "\n", PeoplesList[2].Combine(), "\n", PeoplesList[3].Combine())
 
-	PeoplesList[0].RenameName("Isaac")
+	a := PeoplesList[0].(greeting.People).Combine1()
+	fmt.Println(a)
 	fmt.Println(PeoplesList[0].Combine())
 
-	greeting.RenameToFrog(&PeoplesList[1])
-	fmt.Println(PeoplesList[1].Combine())
+	toUseCastingPointerFunc := PeoplesList[0].(greeting.People)
+	toUseCastingPointerFunc.RenameAddress("new name")
+	PeoplesList[0] = toUseCastingPointerFunc
+	fmt.Println(PeoplesList[0]) // to use a method from greeting.People
+
+	done := make(chan bool, 2)
+	go func() {
+		fmt.Println(PeoplesList[1].Combine(), "chan")
+		done <- true
+		time.Sleep(100 * time.Microsecond)
+		fmt.Println("done!")
+		done <- true
+	}()
+	<-done
+
+	// Concurrency
+
+	// pointers
+	type toAAAA struct {
+		name1 string
+		add1  struct {
+			name2 string
+			add2  struct {
+				name3 string
+			}
+		}
+	}
+	aaa := toAAAA{}
+	aaa.name1 = "aaaa"
+	aaa.add1.name2 = "bbbb"
+	aaa.add1.add2.name3 = "cccc"
+
+	bbb := aaa
+	aaa.add1.add2.name3 = "ddd"
+
+	ccc := &aaa
+	ddd := *ccc
+
+	fmt.Println(aaa)
+	fmt.Println(bbb)
+	fmt.Println(*ccc, ddd)
+
+	fmt.Println(os.Args)
 }
