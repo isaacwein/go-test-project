@@ -1,15 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2eae2d21-05ee-4736-b7bf-1b34ef80a40d" name="Default Changelist" comment="+1">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/hello_world.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pkg/windows_amd64/hello.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pkg/windows_amd64/main/hello_world.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/.idea/dictionaries/user2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/greeting/gretting.go" beforeDir="false" afterPath="$PROJECT_DIR$/main/greeting/gretting.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/hello_world/hello_world.go" beforeDir="false" afterPath="$PROJECT_DIR$/main/hello_world/hello_world.go" afterDir="false" />
+    <list default="true" id="2eae2d21-05ee-4736-b7bf-1b34ef80a40d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignure" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -198,6 +191,14 @@
       <screen x="0" y="0" width="1440" height="920" />
     </state>
     <state x="177" y="116" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.920@0.0.1440.920" timestamp="1586145611632" />
+    <state x="482" y="251" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1586145758690">
+      <screen x="0" y="0" width="1440" height="920" />
+    </state>
+    <state x="482" y="251" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.920@0.0.1440.920" timestamp="1586145758690" />
+    <state x="344" y="0" key="CommitChangelistDialog2" timestamp="1586145726815">
+      <screen x="0" y="0" width="1440" height="920" />
+    </state>
+    <state x="344" y="0" key="CommitChangelistDialog2/0.0.1440.920@0.0.1440.920" timestamp="1586145726815" />
     <state x="100" y="100" width="1240" height="720" key="DiffContextDialog" timestamp="1586145256143">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
@@ -218,6 +219,10 @@
       <screen x="0" y="0" width="1440" height="920" />
     </state>
     <state width="1384" height="221" key="GridCell.Tab.0.right/0.0.1440.920@0.0.1440.920" timestamp="1586145709409" />
+    <state x="314" y="190" key="Vcs.Push.Dialog.v2" timestamp="1586145732620">
+      <screen x="0" y="0" width="1440" height="920" />
+    </state>
+    <state x="314" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.920@0.0.1440.920" timestamp="1586145732620" />
   </component>
   <component name="masterDetails">
     <states>
