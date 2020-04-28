@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"go-test-project/main/greeting"
+	"go-test-project/greeting"
 	"os"
 	"time"
 )

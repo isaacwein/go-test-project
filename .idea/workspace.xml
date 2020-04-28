@@ -1,16 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="2eae2d21-05ee-4736-b7bf-1b34ef80a40d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignure" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sha256test/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_server/localhost.crt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_server/localhost.key" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_server/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/greeting/gretting.go" beforeDir="false" afterPath="$PROJECT_DIR$/greeting/gretting.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/hello_world/hello_world.go" beforeDir="false" afterPath="$PROJECT_DIR$/hello_world/hello_world.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FavoritesManager">
-    <favorites_list name="golang-test-project" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -42,7 +63,6 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -52,12 +72,16 @@
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/hello_world/hello_world.go" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ywein\code\go\go-test-project\main\test_server" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\ywein\code\go\go-test-project" />
       <recent name="C:\Users\user2\code\golang\golang-test-project\src\main" />
@@ -66,7 +90,7 @@
       <recent name="C:\Users\user2\code\golang\golang-test-project\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Build.go build hello_world.go (1)">
+  <component name="RunManager" selected="Go Build.test_server">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="golang-test-project" />
       <working_directory value="$PROJECT_DIR$/" />
@@ -77,44 +101,29 @@
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
-    <configuration name="go build go-test-project/main" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="hello_world" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true">
+      <module name="golang-test-project" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/hello_world/hello_world.go" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <configuration name="sha256test" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true">
       <module name="golang-test-project" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
-      <filePath value="$PROJECT_DIR$/main/man.go" />
-      <package value="go-test-project/main" />
+      <filePath value="$PROJECT_DIR$/main/sha256test/main.go" />
+      <package value="go-test-project/sha256test" />
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
-    <configuration name="go build hello.go (1)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="test_server" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true">
       <module name="golang-test-project" />
-      <working_directory value="$PROJECT_DIR$/" />
-      <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/src/hello.go" />
-      <directory value="$PROJECT_DIR$/" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build hello.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="golang-test-project" />
-      <working_directory value="$PROJECT_DIR$/" />
-      <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/hello.go" />
-      <directory value="$PROJECT_DIR$/" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build hello_world.go (1)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="golang-test-project" />
-      <working_directory value="$PROJECT_DIR$/" />
-      <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/main/hello_world/hello_world.go" />
-      <directory value="$PROJECT_DIR$/" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build hello_world.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="golang-test-project" />
-      <working_directory value="$PROJECT_DIR$/" />
-      <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/src/main/hello_world/hello_world.go" />
+      <working_directory value="$PROJECT_DIR$/test_server" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/main/test_server/main.go" />
+      <package value="go-test-project/test_server" />
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
@@ -129,13 +138,16 @@
       <filePath value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Go Build.sha256test" />
+      <item itemvalue="Go Build.test_server" />
+      <item itemvalue="Go Build.hello_world" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Build.go build hello_world.go (1)" />
-        <item itemvalue="Go Build.go build go-test-project/main" />
-        <item itemvalue="Go Build.go build hello_world.go" />
-        <item itemvalue="Go Build.go build hello.go (1)" />
-        <item itemvalue="Go Build.go build hello.go" />
+        <item itemvalue="Go Build.test_server" />
+        <item itemvalue="Go Build.sha256test" />
+        <item itemvalue="Go Build.hello_world" />
       </list>
     </recent_temporary>
   </component>
@@ -149,16 +161,14 @@
     </todo-panel>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
@@ -177,6 +187,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="+1" />
@@ -184,45 +195,54 @@
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
+    <environment>
+      <map>
+        <entry key="GOPROXY" value="direct" />
+      </map>
+    </environment>
     <proxy>direct</proxy>
   </component>
   <component name="WindowStateProjectService">
-    <state x="177" y="116" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586145611632">
+    <state x="177" y="116" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1588079302115">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state x="177" y="116" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.920@0.0.1440.920" timestamp="1586145611632" />
+    <state x="177" y="116" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.920@0.0.1440.920" timestamp="1588079302115" />
     <state x="482" y="251" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1586145758690">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
     <state x="482" y="251" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.920@0.0.1440.920" timestamp="1586145758690" />
-    <state x="344" y="0" key="CommitChangelistDialog2" timestamp="1586145726815">
+    <state x="344" y="0" key="CommitChangelistDialog2" timestamp="1586145790610">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state x="344" y="0" key="CommitChangelistDialog2/0.0.1440.920@0.0.1440.920" timestamp="1586145726815" />
+    <state x="344" y="0" key="CommitChangelistDialog2/0.0.1440.920@0.0.1440.920" timestamp="1586145790610" />
     <state x="100" y="100" width="1240" height="720" key="DiffContextDialog" timestamp="1586145256143">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
     <state x="100" y="100" width="1240" height="720" key="DiffContextDialog/0.0.1440.920@0.0.1440.920" timestamp="1586145256143" />
-    <state width="1384" height="221" key="GridCell.Tab.0.bottom" timestamp="1586145709409">
+    <state x="502" y="216" key="FileChooserDialogImpl" timestamp="1588079283898">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state width="1384" height="221" key="GridCell.Tab.0.bottom/0.0.1440.920@0.0.1440.920" timestamp="1586145709409" />
-    <state width="1384" height="221" key="GridCell.Tab.0.center" timestamp="1586145709409">
+    <state x="502" y="216" key="FileChooserDialogImpl/0.0.1440.920@0.0.1440.920" timestamp="1588079283898" />
+    <state width="1397" height="236" key="GridCell.Tab.0.bottom" timestamp="1588079369781">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state width="1384" height="221" key="GridCell.Tab.0.center/0.0.1440.920@0.0.1440.920" timestamp="1586145709409" />
-    <state width="1384" height="221" key="GridCell.Tab.0.left" timestamp="1586145709409">
+    <state width="1397" height="236" key="GridCell.Tab.0.bottom/0.0.1440.920@0.0.1440.920" timestamp="1588079369781" />
+    <state width="1397" height="236" key="GridCell.Tab.0.center" timestamp="1588079369781">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state width="1384" height="221" key="GridCell.Tab.0.left/0.0.1440.920@0.0.1440.920" timestamp="1586145709409" />
-    <state width="1384" height="221" key="GridCell.Tab.0.right" timestamp="1586145709409">
+    <state width="1397" height="236" key="GridCell.Tab.0.center/0.0.1440.920@0.0.1440.920" timestamp="1588079369781" />
+    <state width="1397" height="236" key="GridCell.Tab.0.left" timestamp="1588079369781">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state width="1384" height="221" key="GridCell.Tab.0.right/0.0.1440.920@0.0.1440.920" timestamp="1586145709409" />
-    <state x="314" y="190" key="Vcs.Push.Dialog.v2" timestamp="1586145732620">
+    <state width="1397" height="236" key="GridCell.Tab.0.left/0.0.1440.920@0.0.1440.920" timestamp="1588079369781" />
+    <state width="1397" height="236" key="GridCell.Tab.0.right" timestamp="1588079369781">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state x="314" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.920@0.0.1440.920" timestamp="1586145732620" />
+    <state width="1397" height="236" key="GridCell.Tab.0.right/0.0.1440.920@0.0.1440.920" timestamp="1588079369781" />
+    <state x="314" y="190" key="Vcs.Push.Dialog.v2" timestamp="1586145793963">
+      <screen x="0" y="0" width="1440" height="920" />
+    </state>
+    <state x="314" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.920@0.0.1440.920" timestamp="1586145793963" />
   </component>
   <component name="masterDetails">
     <states>
