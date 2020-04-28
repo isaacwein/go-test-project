@@ -6,8 +6,6 @@ import (
 	"strconv"
 )
 
-var A = 1
-
 type Person struct {
 	Name        string
 	Address     string
